@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:51 +0400] "GET / HTTP/1.1" 200 979 http-bio-8080-exec-1 193
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:51 +0400] "GET /images/arrow_icon.png HTTP/1.1" 200 764 http-bio-8080-exec-3 12
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:52 +0400] "GET /images/gavel_image.jpg HTTP/1.1" 200 382794 http-bio-8080-exec-4 32
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:52 +0400] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:54 +0400] "GET /welcome.co HTTP/1.1" 200 2347 http-bio-8080-exec-6 142
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:54 +0400] "GET /images/lawyer.png HTTP/1.1" 200 11842 http-bio-8080-exec-7 20
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:54 +0400] "GET /images/registrar.png HTTP/1.1" 200 8626 http-bio-8080-exec-2 20
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:54 +0400] "GET /images/gavel.png HTTP/1.1" 200 7209 http-bio-8080-exec-9 8
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:58 +0400] "GET /file.co HTTP/1.1" 200 16417 http-bio-8080-exec-10 1946
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:16:58 +0400] "GET /javascript/progressbar.js HTTP/1.1" 200 5593 http-bio-8080-exec-10 80
+0:0:0:0:0:0:0:1 - - [27/Nov/2019:17:17:15 +0400] "GET /file.co HTTP/1.1" 200 16417 http-bio-8080-exec-10 17

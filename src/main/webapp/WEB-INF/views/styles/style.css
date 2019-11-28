@@ -1,0 +1,32 @@
+body{
+    background-image: url(/images/gavel_image.jpg);
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    color : #804242;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.text-description{
+    margin: 37% 0 0 55%;
+}
+
+img{
+    height: 26px;
+    max-width: 26px;
+    margin-left: -135px;
+}

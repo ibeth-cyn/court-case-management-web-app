@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),
+    url(/images/gavel_image.jpg);
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#img{
+    text-align: center;
+}
+
+img{
+    height: 300px;
+}
+
+h1{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    color: #707070;
+    font-size: 1.5em;
+    text-align: center;
+}
