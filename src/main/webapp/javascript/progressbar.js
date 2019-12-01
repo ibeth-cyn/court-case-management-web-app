@@ -15,7 +15,7 @@ function checked() {
     }
 }
 
-//First form radio input check -
+//Second form radio input check
 function checkedd() {
     var yess = document.getElementById("yess").checked;
     var noo = document.getElementById("noo").checked;
@@ -32,7 +32,7 @@ function checkedd() {
     }
 }
 
-//Third form radio input check -
+//Third form radio input check
 function checkeddd() {
     var yesss = document.getElementById("yesss").checked;
     var nooo = document.getElementById("nooo").checked;
@@ -49,7 +49,7 @@ function checkeddd() {
     }
 }
 
-//Four form radio input check -
+//Fourth form radio input check
 function checkedddd() {
     var yessss = document.getElementById("yessss").checked;
     var noooo = document.getElementById("noooo").checked;
@@ -66,7 +66,7 @@ function checkedddd() {
     }
 }
 
-//Five form radio input check -
+//Fifth form radio input check -
 function checkeddddd() {
     var yesssss = document.getElementById("yesssss").checked;
     var nooooo = document.getElementById("nooooo").checked;
@@ -84,6 +84,8 @@ function checkeddddd() {
 }
 
 //Move to and from the first text input
+
+//Previous input field
 function prevI() {
     document.getElementById("one").style.display ="block";
     document.getElementById("val1").style.display = "none";
@@ -92,6 +94,11 @@ function prevI() {
 function prevII() {
     document.getElementById("one").style.display ="block";
     document.getElementById("val2").style.display = "none";
+}
+
+function prevone() {
+    document.getElementById("one").style.display = "block";
+    document.getElementById("two").style.display = "none";
 }
 
 function prev2() {
@@ -104,8 +111,9 @@ function previ() {
     document.getElementById("val22").style.display = "none";
 }
 
-function prevone() {
-
+function prevtwo() {
+    document.getElementById("two").style.display = "block";
+    document.getElementById("three").style.display = "none";
 }
 
 function prev3() {
@@ -118,6 +126,11 @@ function prevIII() {
     document.getElementById("val222").style.display = "none";
 }
 
+function prevthree() {
+    document.getElementById("three").style.display = "block";
+    document.getElementById("four").style.display = "none";
+}
+
 function prev4() {
     document.getElementById("four").style.display ="block";
     document.getElementById("val1111").style.display = "none";
@@ -127,64 +140,230 @@ function prevIV() {
     document.getElementById("four").style.display = "block";
     document.getElementById("val2222").style.display = "none";
 }
-//TODO: Include form validation in these methods
+
+function prevfour() {
+    document.getElementById("four").style.display = "block";
+    document.getElementById("five").style.display = "none";
+}
+
+function prev5() {
+    document.getElementById("five").style.display = "block";
+    document.getElementById("val11111").style.display = "none";
+}
+
+function prevV() {
+    document.getElementById("five").style.display = "block";
+    document.getElementById("val22222").style.display = "none";
+}
+
+function prev6() {
+    document.getElementById("five").style.display = "block";
+    document.getElementById("six").style.display = "none";
+}
+
+function prev7() {
+    document.getElementById("six").style.display = "block";
+    document.getElementById("seven").style.display = "none";
+}
+
+function prev8() {
+    document.getElementById("seven").style.display = "block";
+    document.getElementById("eight").style.display = "none";
+}
+
+
+//Next input field
+//Reference - https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
+//Reference - https://itnext.io/https-medium-com-joshstudley-form-field-validation-with-html-and-a-little-javascript-1bda6a4a4c8c
 function next1() {
-    document.getElementById("two").style.display = "block";
-    document.getElementById("val1").style.display="none";
+
+    var x = document.getElementById("val1");
+    var y = x.getElementsByTagName("input");
+
+    for(var i = 0; i<y.length; i++){
+        if(y[i].value.length === 0) {
+            alert("Please fill out the form fields");
+            return false;
+        } else{
+            document.getElementById("two").style.display = "block";
+            document.getElementById("val1").style.display="none";
+        }
+
+    }
 }
 
 function nextI() {
-    document.getElementById("two").style.display = "block";
-    document.getElementById("val2").style.display="none";
+    var x = document.getElementById("val2");
+    var y = x.getElementsByTagName("input");
+
+    for (var i = 0; i< y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("two").style.display = "block";
+            document.getElementById("val2").style.display="none";
+        }
+    }
 }
 
 function next2() {
-    document.getElementById("three").style.display = "block";
-    document.getElementById("val11").style.display="none";
+
+    var x = document.getElementById("val11");
+    var y = x.getElementsByTagName("input");
+
+    for(var i = 0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("three").style.display = "block";
+            document.getElementById("val11").style.display="none";
+        }
+    }
 }
 
 function nexti() {
-    document.getElementById("three").style.display = "block";
-    document.getElementById("val22").style.display="none";
+
+    var x = document.getElementById("val22");
+    var y = x.getElementsByTagName("input");
+
+    for(var i =0; i<y.length; i++){
+        if(y[i].value.length === 0) {
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("three").style.display = "block";
+            document.getElementById("val22").style.display="none";
+        }
+    }
 }
 
 function next3() {
-    document.getElementById("four").style.display = "block";
-    document.getElementById("val111").style.display="none";
+
+    var x = document.getElementById("val111");
+    var y = x.getElementsByTagName("input");
+
+    for(var i = 0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("four").style.display = "block";
+            document.getElementById("val111").style.display="none";
+        }
+    }
 }
 
 function nextIII() {
-    document.getElementById("four").style.display = "block";
-    document.getElementById("val222").style.display="none";
+
+    var x = document.getElementById("val222");
+    var y = x.getElementsByTagName("input");
+
+    for(var i =0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("four").style.display = "block";
+            document.getElementById("val222").style.display="none";
+        }
+    }
 }
 
 function next4() {
-    document.getElementById("five").style.display = "block";
-    document.getElementById("val1111").style.display="none";
+
+    var x = document.getElementById("val1111");
+    var y = x.getElementsByTagName("input");
+
+    for(var i =0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else {
+            document.getElementById("five").style.display = "block";
+            document.getElementById("val1111").style.display="none";
+        }
+    }
 }
 
 function nextIV() {
-    document.getElementById("five").style.display = "block";
-    document.getElementById("val2222").style.display="none";
-}
 
-function formValidation(){
+    var x = document.getElementById("val2222");
+    var y = x.getElementsByTagName("input");
 
-    // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("pages");
-    y = x.getElementsByTagName("input");
-
-    // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
-        // If a field is empty...
-        if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
+    for(var i =0; i<y.length; i++) {
+        if (y[i].value.length === 0) {
+            alert("Please fill out the form fields");
+            return false;
+        } else {
+            document.getElementById("five").style.display = "block";
+            document.getElementById("val2222").style.display="none";
         }
     }
-    return valid; // return the valid status
+}
+
+function next5() {
+
+    var x = document.getElementById("val11111");
+    var y = x.getElementsByTagName("input");
+
+    for(var i = 0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("val22222").style.display = "block";
+            document.getElementById("val11111").style.display = "none";
+        }
+    }
+}
+
+function nextV() {
+
+    var x = document.getElementById("val22222");
+    var y = x.getElementsByTagName("input");
+
+    for(var i = 0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("six").style.display = "block";
+            document.getElementById("val22222").style.display = "none";
+        }
+    }
+}
+
+function next6() {
+
+    var x = document.getElementById("six");
+    var y = x.getElementsByTagName("input");
+
+    for(var i =0; i<y.length; i++){
+        if(y[i].value.length === 0){
+            alert("Please fill out the form fields");
+            return false;
+        }else{
+            document.getElementById("seven").style.display = "block";
+            document.getElementById("six").style.display = "none";
+        }
+    }
+}
+
+function next7() {
+
+    var x = document.getElementById("seven");
+    var y = x.getElementsByTagName("input");
+
+    for (var i = 0; i < y.length; i++) {
+        if (y[i].value.length === 0) {
+            alert("Please fill out the form fields");
+            return false;
+        } else {
+            document.getElementById("eight").style.display = "block";
+            document.getElementById("seven").style.display = "none";
+        }
+    }
 }
 

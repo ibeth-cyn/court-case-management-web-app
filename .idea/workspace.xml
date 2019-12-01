@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="330491cb-31f6-42be-afd5-d33f6d44aa4d" name="Default Changelist" comment="" />
+    <list default="true" id="330491cb-31f6-42be-afd5-d33f6d44aa4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forms.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/forms_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/forms_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/forms_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/forms_jsp.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +71,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forms.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2635">
-              <caret line="155" column="58" selection-start-line="155" selection-start-column="58" selection-end-line="155" selection-end-column="58" />
+            <state relative-caret-position="56">
+              <caret line="194" column="59" selection-start-line="194" selection-start-column="59" selection-end-line="194" selection-end-column="59" />
+              <folding>
+                <element signature="n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#9;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#11;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#12;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#13;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#14;n#form#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +97,45 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/progressbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="1326">
+              <caret line="353" column="17" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!block;n#checked#0" />
+                <element signature="n#!!block;n#checkedd#0" />
+                <element signature="n#!!block;n#checkeddd#0" />
+                <element signature="n#!!block;n#checkedddd#0" />
+                <element signature="n#!!block;n#checkeddddd#0" />
+                <element signature="n#!!block;n#prevI#0" />
+                <element signature="n#!!block;n#prevII#0" />
+                <element signature="n#!!block;n#prevone#0" />
+                <element signature="n#!!block;n#prev2#0" />
+                <element signature="n#!!block;n#previ#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#prev3#0" />
+                <element signature="n#!!block;n#prevIII#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#prev4#0" />
+                <element signature="n#!!block;n#prevIV#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#next1#0" />
+                <element signature="n#!!block;n#nextI#0" />
+                <element signature="n#!!block;n#next2#0" />
+                <element signature="n#!!block;n#nexti#0" />
+                <element signature="n#!!block;n#next3#0" />
+                <element signature="n#!!block;n#nextIII#0" />
+                <element signature="n#!!block;n#next4#0" />
+                <element signature="n#!!block;n#nextIV#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#f#0" />
+                <element signature="n#!!block;n#next7#0" />
+                <marker date="1575218043563" expanded="true" signature="3362:3504" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +170,12 @@
       <find>po</find>
       <find>.next</find>
       <find>.pos</find>
+      <find>views</find>
+      <find>prevone</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,17 +259,55 @@
               <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courtcasemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code_Development" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
@@ -311,11 +417,16 @@
       <workItem from="1574454705523" duration="1812000" />
       <workItem from="1574857960762" duration="3351000" />
       <workItem from="1574941375051" duration="602000" />
+      <workItem from="1574981086211" duration="5629000" />
+      <workItem from="1575059537720" duration="286000" />
+      <workItem from="1575066722878" duration="1195000" />
+      <workItem from="1575148005988" duration="3277000" />
+      <workItem from="1575204460461" duration="8827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269469000" />
+    <option name="totallyTimeSpent" value="288683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,7 +438,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2340081" />
@@ -367,7 +478,7 @@
       <window_info anchor="right" id="Mongo Explorer" order="12" weight="0.17246963" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2340081" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2340081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -377,7 +488,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" weight="0.21492007" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.21492007" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/core-scripting.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -667,6 +771,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/view.js" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/servlets/FormsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -696,15 +801,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/forms.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="155" column="58" selection-start-line="155" selection-start-column="58" selection-end-line="155" selection-end-column="58" />
+        <state relative-caret-position="56">
+          <caret line="194" column="59" selection-start-line="194" selection-start-column="59" selection-end-line="194" selection-end-column="59" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#form#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/progressbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="1326">
+          <caret line="353" column="17" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!block;n#checked#0" />
+            <element signature="n#!!block;n#checkedd#0" />
+            <element signature="n#!!block;n#checkeddd#0" />
+            <element signature="n#!!block;n#checkedddd#0" />
+            <element signature="n#!!block;n#checkeddddd#0" />
+            <element signature="n#!!block;n#prevI#0" />
+            <element signature="n#!!block;n#prevII#0" />
+            <element signature="n#!!block;n#prevone#0" />
+            <element signature="n#!!block;n#prev2#0" />
+            <element signature="n#!!block;n#previ#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#prev3#0" />
+            <element signature="n#!!block;n#prevIII#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#prev4#0" />
+            <element signature="n#!!block;n#prevIV#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#next1#0" />
+            <element signature="n#!!block;n#nextI#0" />
+            <element signature="n#!!block;n#next2#0" />
+            <element signature="n#!!block;n#nexti#0" />
+            <element signature="n#!!block;n#next3#0" />
+            <element signature="n#!!block;n#nextIII#0" />
+            <element signature="n#!!block;n#next4#0" />
+            <element signature="n#!!block;n#nextIV#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#next7#0" />
+            <marker date="1575218043563" expanded="true" signature="3362:3504" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

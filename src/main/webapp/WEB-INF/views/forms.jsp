@@ -12,7 +12,7 @@
     <title>Typical forms page content</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <style><%@include file="/WEB-INF/views/styles/forms.css"%></style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--%>
 </head>
 <body>
 <h1>Filing a Claim Procedure</h1>
@@ -33,17 +33,17 @@
             <input class="group" type="radio" name="radio" id="no">
             <p>A law firm or an organization</p>
             </div>
-            <button onclick="checked()"class="next" name="next" type="button" style="margin-top: 5%; margin-left: 75%; "><strong>NEXT</strong></button>
+            <button class="next" name="next" type="button" style="margin-top: 5%; margin-left: 75%;" onclick="checked()"><strong>NEXT</strong></button>
         </div>
     <div class="pages" id="val1" style="display: none;">
         <p>What is your full name? <strong>*</strong></p><br>
         <div class="inp">
                 <p>First and middle name</p>
-                <input name="claimantName" type="text" required>
+                <input class="try-out" name="claimantName" type="text" required>
                 <p>Surname</p>
-                <input name="claimantSurname"type="text" required>
+                <input class="try-out" name="claimantSurname"type="text" required>
                 <p>Trading name or <br>representative capacity(if any)</p>
-                <input name="claimantTradingName" type="text" required>
+                <input class="try-out" name="claimantTradingName" type="text" required>
             </div>
         <button class="previous" name="prev" onclick="prevI()" type="button"><strong>PREVIOUS</strong></button>
         <button class="next" name="next" onclick="next1()" type="button"><strong>NEXT</strong></button>
@@ -190,7 +190,7 @@
                 <input name="defendantEmail" type="email"> <!--LIMITATION: ADD ANOTHER DEFENDANT-->
             </div>
             <button name="prev" class="previous" onclick="prev5()" type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" onclick="nextfive()" type="button"><strong>NEXT</strong></button>
+            <button name="next" class="next position" onclick="next5()" type="button"><strong>NEXT</strong></button>
         </div>
     <div class="pages" id="val22222" style="display: none;">
             <p>What is the background of the claim? <strong>*</strong></p>
@@ -198,10 +198,10 @@
                 <p>Briefly describe the essential facts about the story behind this claim.</p>
                 <input name="briefDescription" type="textbox">
             </div>
-            <button name="prev" class="previous" onclick="prev5()"type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" onclick="next5()" type="button"><strong>NEXT</strong></button>
+            <button name="prev" class="previous" onclick="prevV()"type="button"><strong>PREVIOUS</strong></button>
+            <button name="next" class="next position" onclick="nextV()" type="button"><strong>NEXT</strong></button>
         </div>
-    <div class="pages" style="display: none;">
+    <div class="pages" id="six" style="display: none;">
             <p>What steps have you taken to try settle out of court with the defendant?  <strong>*</strong></p><br>
             <div class="rad">
                 <input class= "check" type="checkbox" name="checkbox">
@@ -209,26 +209,26 @@
                 <input class="check" type="checkbox" name="checkbox">
                 <p>Alternative Dispute Resolution (ADR)</p>
             </div>
-            <button name="prev" class="previous" type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" type="button"><strong>NEXT</strong></button>
+            <button name="prev" class="previous" onclick="prev6()" type="button"><strong>PREVIOUS</strong></button>
+            <button name="next" class="next position" onclick="next6()" type="button"><strong>NEXT</strong></button>
         </div>
-    <div class="pages" style="display: none;">
+    <div class="pages" id="seven" style="display: none;">
             <div>
                 <p>Attach statement of claim <strong>*</strong></p>
                 <input name="statementOfClaim" type="file">
                 <p>Attach statements of oaths of witness(es) <strong>*</strong></p>
                 <input name="oathOfWitness" type="file">
             </div>
-            <button name="prev" class="previous" type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" type="button"><strong>NEXT</strong></button>
+            <button name="prev" class="previous" onclick="prev7()" type="button"><strong>PREVIOUS</strong></button>
+            <button name="next" class="next position" onclick="next7()" type="button"><strong>NEXT</strong></button>
         </div>
-    <div class="pages" style="display: none;">
+    <div class="pages" id="eight" style="display: none;">
             <div>
                 <p>Attach other relevant documents to the claim <strong>*</strong></p>
                 <input name="relevantDocument" type="file">
             </div>
-            <button name="prev" class="previous" type="button"><strong>PREVIOUS</strong></button>
-            <button name="submit" class="position next-page" type="submit"><strong>SUBMIT</strong></button>
+            <button name="prev" class="previous" onclick="prev8()" type="button"><strong>PREVIOUS</strong></button>
+            <button name="submit" class="position next-page" onsubmit="final()" type="submit"><strong>SUBMIT</strong></button>
         </div>
 </form>
 <script src="/javascript/progressbar.js" type="text/javascript"></script>
