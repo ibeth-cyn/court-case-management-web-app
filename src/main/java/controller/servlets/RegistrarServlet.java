@@ -17,17 +17,18 @@ public class RegistrarServlet extends HttpServlet {
     protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
             throws ServletException, IOException {
 //        httpServletRequest.setAttribute("listCases", listCases.getRegistrarCases());
-        httpServletRequest.getRequestDispatcher("/WEB-INF/views/registrarDashboard.jsp");
+        httpServletRequest.getRequestDispatcher("/WEB-INF/views/registrardashboard.jsp").
+                forward(httpServletRequest,httpServletResponse);
     }
 
-    @Override
-    protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
-            throws ServletException, IOException {
-//        for (Document c :listCases.getRegistrarCases()) {
-//            httpServletRequest.setAttribute("listCases",c);
-//            httpServletRequest.getRequestDispatcher("/WEB-INF/views/registrardashboard.jsp").
-//                    forward(httpServletRequest,httpServletResponse);
-//
-//        }
-    }
+//    @Override
+//    protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
+//            throws ServletException, IOException {
+////        for (Document c :listCases.getRegistrarCases()) {
+////            httpServletRequest.setAttribute("listCases",c);
+////            httpServletRequest.getRequestDispatcher("/WEB-INF/views/registrardashboard.jsp").
+////                    forward(httpServletRequest,httpServletResponse);
+////
+////        }
+//    }
 }
