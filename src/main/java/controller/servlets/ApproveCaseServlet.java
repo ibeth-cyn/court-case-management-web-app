@@ -1,6 +1,6 @@
 package controller.servlets;
 
-import db.CaseDB;
+import dao.CaseDB;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

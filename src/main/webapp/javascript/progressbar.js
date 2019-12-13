@@ -156,20 +156,20 @@ function prevV() {
     document.getElementById("val22222").style.display = "none";
 }
 
-function prev6() {
-    document.getElementById("five").style.display = "block";
-    document.getElementById("six").style.display = "none";
-}
-
-function prev7() {
-    document.getElementById("six").style.display = "block";
-    document.getElementById("seven").style.display = "none";
-}
-
-function prev8() {
-    document.getElementById("seven").style.display = "block";
-    document.getElementById("eight").style.display = "none";
-}
+// function prev6() {
+//     document.getElementById("five").style.display = "block";
+//     document.getElementById("six").style.display = "none";
+// }
+//
+// function prev7() {
+//     document.getElementById("six").style.display = "block";
+//     document.getElementById("seven").style.display = "none";
+// }
+//
+// function prev8() {
+//     document.getElementById("seven").style.display = "block";
+//     document.getElementById("eight").style.display = "none";
+// }
 
 
 //Next input field
@@ -245,7 +245,7 @@ function next3() {
     var y = x.getElementsByTagName("input");
 
     for(var i = 0; i<y.length; i++){
-        if(y[i].value.length === 0){
+        if(y[i].value.length === 0 ){
             alert("Please fill out the form fields");
             return false;
         }else{
@@ -319,51 +319,51 @@ function next5() {
     }
 }
 
-function nextV() {
-
-    var x = document.getElementById("val22222");
-    var y = x.getElementsByTagName("input");
-
-    for(var i = 0; i<y.length; i++){
-        if(y[i].value.length === 0){
-            alert("Please fill out the form fields");
-            return false;
-        }else{
-            document.getElementById("six").style.display = "block";
-            document.getElementById("val22222").style.display = "none";
-        }
-    }
-}
-
-function next6() {
-
-    var x = document.getElementById("six");
-    var y = x.getElementsByTagName("input");
-
-    for(var i =0; i<y.length; i++){
-        if(y[i].value.length === 0){
-            alert("Please fill out the form fields");
-            return false;
-        }else{
-            document.getElementById("seven").style.display = "block";
-            document.getElementById("six").style.display = "none";
-        }
-    }
-}
-
-function next7() {
-
-    var x = document.getElementById("seven");
-    var y = x.getElementsByTagName("input");
-
-    for (var i = 0; i < y.length; i++) {
-        if (y[i].value.length === 0) {
-            alert("Please fill out the form fields");
-            return false;
-        } else {
-            document.getElementById("eight").style.display = "block";
-            document.getElementById("seven").style.display = "none";
-        }
-    }
-}
+// function nextV() {
+//
+//     var x = document.getElementById("val22222");
+//     var y = x.getElementsByTagName("input");
+//
+//     for(var i = 0; i<y.length; i++){
+//         if(y[i].value.length === 0){
+//             alert("Please fill out the form fields");
+//             return false;
+//         }else{
+//             document.getElementById("six").style.display = "block";
+//             document.getElementById("val22222").style.display = "none";
+//         }
+//     }
+// }
+//
+// function next6() {
+//
+//     var x = document.getElementById("six");
+//     var y = x.getElementsByTagName("input");
+//
+//     for(var i =0; i<y.length; i++){
+//         if(y[i].value.length === 0){
+//             alert("Please fill out the form fields");
+//             return false;
+//         }else{
+//             document.getElementById("seven").style.display = "block";
+//             document.getElementById("six").style.display = "none";
+//         }
+//     }
+// }
+//
+// function next7() {
+//
+//     var x = document.getElementById("seven");
+//     var y = x.getElementsByTagName("input");
+//
+//     for (var i = 0; i < y.length; i++) {
+//         if (y[i].value.length === 0) {
+//             alert("Please fill out the form fields");
+//             return false;
+//         } else {
+//             document.getElementById("eight").style.display = "block";
+//             document.getElementById("seven").style.display = "none";
+//         }
+//     }
+// }
 

@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Person {
 
-    private int id;
+
     private String email;
     private String password;
     private String name;
@@ -23,13 +23,6 @@ public class Person {
         this.role = role;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmail() {
         return email;
@@ -66,8 +59,7 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
+                "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", role='" + role + '\'' +
@@ -79,8 +71,7 @@ public class Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return id == person.id &&
-                Objects.equals(email, person.email) &&
+        return Objects.equals(email, person.email) &&
                 Objects.equals(password, person.password) &&
                 Objects.equals(name, person.name) &&
                 Objects.equals(role, person.role);
@@ -88,6 +79,6 @@ public class Person {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, password, name, role);
+        return Objects.hash(email, password, name, role);
     }
 }

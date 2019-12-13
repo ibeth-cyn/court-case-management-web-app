@@ -1,4 +1,4 @@
-package db;
+package dao;
 
 import com.mongodb.*;
 import com.mongodb.client.FindIterable;
@@ -80,7 +80,7 @@ public class UserDB {
             return password;
         }
         return password;
-        }
+    }
 
     //method that returns the role of a user
     public String userRole(Person person){
@@ -98,16 +98,20 @@ public class UserDB {
 
     private  ArrayList<Person> createPerson() throws InvalidKeySpecException, NoSuchAlgorithmException {
         String judgePassword = "#ntakIma1912";
+        String judge2Password = "#ntakEli2019";
         String registrarPassword = "#ntakNdi1906";
         String judgeHash = hashPassword(judgePassword);
+        String judge2Hash = hashPassword(judge2Password);
         String registrarHash = hashPassword(registrarPassword);
 
         Person judge = new Person("ibethakpan@gmail.com",judgeHash,"Oyinkansola Abayomi","Judge");
         Person registrar = new Person("registrar@lagoshighcourt.ng", registrarHash, "Ndifreke-Abasi Akpan", "Registrar");
+        Person judge2 = new Person("eakpan15@alustudent.com", judge2Hash, "Elizabeth Michael", "Judge");
 
         ArrayList<Person> personArrayList = new ArrayList<>();
         personArrayList.add(judge);
         personArrayList.add(registrar);
+        personArrayList.add(judge2);
         return personArrayList;
     }
 }

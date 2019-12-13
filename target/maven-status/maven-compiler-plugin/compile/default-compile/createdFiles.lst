@@ -1,13 +1,14 @@
 controller\PasswordHash.class
 controller\servlets\FiledServlet.class
 controller\servlets\RegistrarServlet.class
+dao\UserDB.class
 controller\servlets\LogoutServlet.class
 model\Person.class
 controller\servlets\LoginServlet.class
-db\CaseDB.class
+dao\CaseDB.class
 controller\servlets\ApproveCaseServlet.class
+model\Case.class
 controller\servlets\WelcomePageServlet.class
 controller\servlets\FormsServlet.class
 controller\servlets\LandingPageServlet.class
 controller\servlets\JudgeServlet.class
-db\UserDB.class

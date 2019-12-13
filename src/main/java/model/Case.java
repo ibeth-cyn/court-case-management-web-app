@@ -1,14 +1,11 @@
 package model;
 
-import java.util.*;
+
+import java.util.Objects;
 
 public class Case {
 
-    //TODO: Create a constructor that displays what appears on the registrar's dashboard
     //TODO: Create a constructor that displays what appears on the judge's dashboard
-
-    //Case Identifier
-    private static int suitNumber = 1;
 
     //Claimant details
     private String claimantName; //Can be the name of the law firm as well
@@ -16,7 +13,6 @@ public class Case {
     private String claimantSurname;
     private String claimantTradingName;
     private String claimantOrganisationType;
-    private String claimantRegistrationNumber;
     private String claimantAddress;
     private String claimantEmailAddress;
 
@@ -26,7 +22,6 @@ public class Case {
     private String clientSurname;
     private String clientTradingName;
     private String clientOrganisationType;
-    private String clientRegistrationNumber;
 
     //Defendant details
     private String defendantName; //Can be the name of the defendant's organisation as well
@@ -34,81 +29,62 @@ public class Case {
     private String defendantSurname;
     private String defendantTradingName;
     private String defendantOrganisationType;
-    private String defendantRegistrationNumber;
     private String defendantAddress;
     private String defendantLGA;
     private String defendantEmail;
-    //TODO: Subject to change as a better understanding of the data is achieved
-    private HashMap<String,String> defendantContactDetails;
 
     //Claim documents reference
-    private String statementsOfClaim;
+    private String statementOfClaim;
     private String briefDescription;
     private String checkbox;
-    private ArrayList<String> disputeResolution;
-    //TODO: Subject to change as a better understanding of the data is achieved
     private String oathOfWitness;
     private String relevantDocument;
-    private ArrayList<String> oathOfWitnesses;
-    private ArrayList<String> relevantDocuments;
+    private String status;
 
-
-    //public Case(int suitNumber, String defe)
-    //Getters and Setters
 
     //Constructor defining features of a case
-    public Case(){
+    public Case() {
 
     }
 
     public Case(String claimantName, String claimantSurname, String claimantTradingName, String claimantOrganisationType,
-                String claimantRegistrationNumber, String claimantAddress, String claimantEmailAddress, String clientName,
-                String clientSurname, String clientTradingName, String clientOrganisationType, String clientRegistrationNumber,
-                String defendantName, String defendantSurname, String defendantTradingName, String defendantOrganisationType,
-                String defendantRegistrationNumber, String defendantAddress, String defendantLGA, String defendantEmail,
-                String statementsOfClaim, String briefDescription, String checkbox, String oathOfWitness, String relevantDocument){
+                String claimantAddress, String claimantEmailAddress, String clientName, String clientSurname, String clientTradingName,
+                String clientOrganisationType, String defendantName, String defendantSurname, String defendantTradingName,
+                String defendantOrganisationType, String defendantAddress, String defendantLGA, String defendantEmail,
+                String briefDescription) {
 
         this.claimantName = claimantName;
         this.claimantSurname = claimantSurname;
         this.claimantTradingName = claimantTradingName;
         this.claimantOrganisationType = claimantOrganisationType;
-        this.claimantRegistrationNumber = claimantRegistrationNumber;
         this.claimantAddress = claimantAddress;
-        this.claimantEmailAddress= claimantEmailAddress;
+        this.claimantEmailAddress = claimantEmailAddress;
         this.clientName = clientName;
         this.clientSurname = clientSurname;
         this.clientTradingName = clientTradingName;
         this.clientOrganisationType = clientOrganisationType;
-        this.clientRegistrationNumber = clientRegistrationNumber;
         this.defendantName = defendantName;
         this.defendantSurname = defendantSurname;
         this.defendantTradingName = defendantTradingName;
         this.defendantOrganisationType = defendantOrganisationType;
-        this.defendantRegistrationNumber = defendantRegistrationNumber;
         this.defendantAddress = defendantAddress;
         this.defendantLGA = defendantLGA;
         this.defendantEmail = defendantEmail;
-        this.statementsOfClaim = statementsOfClaim;
         this.briefDescription = briefDescription;
-        this.checkbox = checkbox;
-        this.oathOfWitness = oathOfWitness;
-        this.relevantDocument = relevantDocument;
     }
 
-    public int getSuitNumber() {
-        return suitNumber++;
+    public Case(String claimantName, String briefDescription, String status) {
+        this.claimantName = claimantName;
+        this.briefDescription = briefDescription;
+        this.status = status;
     }
 
-    public void setSuitNumber(int suitNumber) {
-        this.suitNumber = suitNumber;
+    public String getStatus() {
+        return status;
     }
 
-    public String getCheckbox() {
-        return checkbox;
-    }
-
-    public void setCheckbox(String checkbox) {
-        this.checkbox = checkbox;
+    public void setStatus() {
+        this.status = "Pending";
     }
 
     public String getClaimantName() {
@@ -143,13 +119,6 @@ public class Case {
         this.claimantOrganisationType = claimantOrganisationType;
     }
 
-    public String getClaimantRegistrationNumber() {
-        return claimantRegistrationNumber;
-    }
-
-    public void setClaimantRegistrationNumber(String claimantRegistrationNumber) {
-        this.claimantRegistrationNumber = claimantRegistrationNumber;
-    }
 
     public String getClaimantAddress() {
         return claimantAddress;
@@ -195,33 +164,8 @@ public class Case {
         return clientOrganisationType;
     }
 
-    public String getBriefDescription() {
-        return briefDescription;
-    }
-
-    public void setBriefDescription(String briefDescription) {
-        this.briefDescription = briefDescription;
-    }
-
-    public ArrayList<String> getDisputeResolution() {
-        return disputeResolution;
-    }
-
-    public void setDisputeResolution(ArrayList<String> disputeResolution) {
-        disputeResolution.add(getCheckbox());
-        this.disputeResolution = disputeResolution;
-    }
-
     public void setClientOrganisationType(String clientOrganisationType) {
         this.clientOrganisationType = clientOrganisationType;
-    }
-
-    public String getClientRegistrationNumber() {
-        return clientRegistrationNumber;
-    }
-
-    public void setClientRegistrationNumber(String clientRegistrationNumber) {
-        this.clientRegistrationNumber = clientRegistrationNumber;
     }
 
     public String getDefendantName() {
@@ -256,14 +200,6 @@ public class Case {
         this.defendantOrganisationType = defendantOrganisationType;
     }
 
-    public String getDefendantRegistrationNumber() {
-        return defendantRegistrationNumber;
-    }
-
-    public void setDefendantRegistrationNumber(String defendantRegistrationNumber) {
-        this.defendantRegistrationNumber = defendantRegistrationNumber;
-    }
-
     public String getDefendantAddress() {
         return defendantAddress;
     }
@@ -288,26 +224,29 @@ public class Case {
         this.defendantEmail = defendantEmail;
     }
 
-    public HashMap<String, String> getDefendantContactDetails() {
-        return defendantContactDetails;
+    public String getStatementOfClaim() {
+        return statementOfClaim;
     }
 
-    public void setDefendantContactDetails(HashMap<String, String> defendantContactDetails) {
-        defendantContactDetails.put("defendantAddress", getDefendantAddress());
-        defendantContactDetails.put("defendantLGA", getDefendantLGA());
-        defendantContactDetails.put("defendantEmail", getDefendantEmail());
-
-        this.defendantContactDetails = defendantContactDetails;
+    public void setStatementOfClaim(String statementOfClaim) {
+        this.statementOfClaim = statementOfClaim;
     }
 
-    public String getStatementsOfClaim() {
-        return statementsOfClaim;
+    public String getBriefDescription() {
+        return briefDescription;
     }
 
-    public void setStatementsOfClaim(String statementsOfClaim) {
-        this.statementsOfClaim = statementsOfClaim;
+    public void setBriefDescription(String briefDescription) {
+        this.briefDescription = briefDescription;
     }
 
+    public String getCheckbox() {
+        return checkbox;
+    }
+
+    public void setCheckbox(String checkbox) {
+        this.checkbox = checkbox;
+    }
 
     public String getOathOfWitness() {
         return oathOfWitness;
@@ -325,24 +264,6 @@ public class Case {
         this.relevantDocument = relevantDocument;
     }
 
-    public ArrayList<String> getOathOfWitnesses() {
-        return oathOfWitnesses;
-    }
-
-    public void setOathOfWitnesses(ArrayList<String> oathOfWitnesses) {
-        oathOfWitnesses.add(getOathOfWitness());
-        this.oathOfWitnesses = oathOfWitnesses;
-    }
-
-    public ArrayList<String> getRelevantDocuments() {
-        return relevantDocuments;
-    }
-
-    public void setRelevantDocuments(ArrayList<String> relevantDocuments) {
-        relevantDocuments.add(getRelevantDocument());
-        this.relevantDocuments = relevantDocuments;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -352,39 +273,30 @@ public class Case {
                 Objects.equals(claimantSurname, aCase.claimantSurname) &&
                 Objects.equals(claimantTradingName, aCase.claimantTradingName) &&
                 Objects.equals(claimantOrganisationType, aCase.claimantOrganisationType) &&
-                Objects.equals(claimantRegistrationNumber, aCase.claimantRegistrationNumber) &&
                 Objects.equals(claimantAddress, aCase.claimantAddress) &&
                 Objects.equals(claimantEmailAddress, aCase.claimantEmailAddress) &&
                 Objects.equals(clientName, aCase.clientName) &&
                 Objects.equals(clientSurname, aCase.clientSurname) &&
                 Objects.equals(clientTradingName, aCase.clientTradingName) &&
                 Objects.equals(clientOrganisationType, aCase.clientOrganisationType) &&
-                Objects.equals(clientRegistrationNumber, aCase.clientRegistrationNumber) &&
                 Objects.equals(defendantName, aCase.defendantName) &&
                 Objects.equals(defendantSurname, aCase.defendantSurname) &&
                 Objects.equals(defendantTradingName, aCase.defendantTradingName) &&
                 Objects.equals(defendantOrganisationType, aCase.defendantOrganisationType) &&
-                Objects.equals(defendantRegistrationNumber, aCase.defendantRegistrationNumber) &&
                 Objects.equals(defendantAddress, aCase.defendantAddress) &&
                 Objects.equals(defendantLGA, aCase.defendantLGA) &&
                 Objects.equals(defendantEmail, aCase.defendantEmail) &&
-                Objects.equals(defendantContactDetails, aCase.defendantContactDetails) &&
-                Objects.equals(statementsOfClaim, aCase.statementsOfClaim) &&
+                Objects.equals(statementOfClaim, aCase.statementOfClaim) &&
                 Objects.equals(briefDescription, aCase.briefDescription) &&
-                Objects.equals(disputeResolution, aCase.disputeResolution) &&
+                Objects.equals(checkbox, aCase.checkbox) &&
                 Objects.equals(oathOfWitness, aCase.oathOfWitness) &&
                 Objects.equals(relevantDocument, aCase.relevantDocument) &&
-                Objects.equals(oathOfWitnesses, aCase.oathOfWitnesses) &&
-                Objects.equals(relevantDocuments, aCase.relevantDocuments);
+                Objects.equals(status, aCase.status);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(claimantName, claimantSurname, claimantTradingName, claimantOrganisationType,
-                claimantRegistrationNumber, claimantAddress, claimantEmailAddress, clientName, clientSurname,
-                clientTradingName, clientOrganisationType, clientRegistrationNumber, defendantName, defendantSurname,
-                defendantTradingName, defendantOrganisationType, defendantRegistrationNumber, defendantAddress, defendantLGA,
-                defendantEmail, defendantContactDetails, statementsOfClaim, briefDescription, disputeResolution, oathOfWitness,
-                relevantDocument, oathOfWitnesses, relevantDocuments);
+        return Objects.hash(claimantName, claimantSurname, claimantTradingName, claimantOrganisationType, claimantAddress, claimantEmailAddress, clientName, clientSurname, clientTradingName, clientOrganisationType, defendantName, defendantSurname, defendantTradingName, defendantOrganisationType, defendantAddress, defendantLGA, defendantEmail, statementOfClaim, briefDescription, checkbox, oathOfWitness, relevantDocument, status);
     }
 }
+

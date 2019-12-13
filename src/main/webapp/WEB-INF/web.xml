@@ -4,7 +4,6 @@
 
     <display-name>Court case management</display-name>
 
-    <!--FILING A CLAIM FOR NOW -->
     <welcome-file-list>
         <welcome-file>landingpage.co</welcome-file>
     </welcome-file-list>

@@ -1,7 +1,7 @@
 package controller.servlets;
 
 import controller.PasswordHash;
-import db.UserDB;
+import dao.UserDB;
 import model.Person;
 
 import javax.servlet.ServletException;

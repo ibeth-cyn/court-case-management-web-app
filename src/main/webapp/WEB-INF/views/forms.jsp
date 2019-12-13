@@ -12,7 +12,6 @@
     <title>Typical forms page content</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <style><%@include file="/WEB-INF/views/styles/forms.css"%></style>
-<%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--%>
 </head>
 <body>
 <h1>Filing a Claim Procedure</h1>
@@ -39,11 +38,11 @@
         <p>What is your full name? <strong>*</strong></p><br>
         <div class="inp">
                 <p>First and middle name</p>
-                <input class="try-out" name="claimantName" type="text" required>
+                <input class="try-out" name="claimantName" type="text">
                 <p>Surname</p>
-                <input class="try-out" name="claimantSurname"type="text" required>
+                <input class="try-out" name="claimantSurname"type="text">
                 <p>Trading name or <br>representative capacity(if any)</p>
-                <input class="try-out" name="claimantTradingName" type="text" required>
+                <input class="try-out" name="claimantTradingName" type="text">
             </div>
         <button class="previous" name="prev" onclick="prevI()" type="button"><strong>PREVIOUS</strong></button>
         <button class="next" name="next" onclick="next1()" type="button"><strong>NEXT</strong></button>
@@ -52,13 +51,11 @@
             <p>What is the name of the law firm or organisation?  <strong>*</strong></p><br>
             <div class="inp">
                 <p>Name</p>
-                <input name="claimantName" type="text" required>
+                <input name="claimantName" type="text">
                 <p>Firm or organisation type</p>
-                <input name="claimantOrganisationType" type="text" required>
-                <p>Registration number</p>
-                <input type="text" required>
-<%--                <p>Trading name (if any)</p>--%>
-<%--                <input name="claimantTradingName" type="text">--%>
+                <input name="claimantOrganisationType" type="text">
+                <p>Trading name (if any)</p>
+                <input name="claimantTradingName" type="text">
             </div>
             <button name="prev" class="previous" onclick="prevII()" type="button"><strong>PREVIOUS</strong></button>
             <button name="next" class="next" onclick="nextI()" type="button"><strong>NEXT</strong></button>
@@ -160,8 +157,6 @@
                 <input name="defendantName" type="text">
                 <p>Firm or organisation type</p>
                 <input name="defendantOrganisationType" type="text">
-                <!--p>Registration number</p>
-                <input type="text"-->
                 <p>Trading name (if any)</p>
                 <input name="defendantTradingName" type="text">
             </div>
@@ -199,37 +194,39 @@
                 <input name="briefDescription" type="textbox">
             </div>
             <button name="prev" class="previous" onclick="prevV()"type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" onclick="nextV()" type="button"><strong>NEXT</strong></button>
+            <button name="submit" class="next position" type="submit"><strong>SUBMIT</strong></button>
         </div>
-    <div class="pages" id="six" style="display: none;">
-            <p>What steps have you taken to try settle out of court with the defendant?  <strong>*</strong></p><br>
-            <div class="rad">
-                <input class= "check" type="checkbox" name="checkbox">
-                <p>Tried to settle amicably with other party</p>
-                <input class="check" type="checkbox" name="checkbox">
-                <p>Alternative Dispute Resolution (ADR)</p>
-            </div>
-            <button name="prev" class="previous" onclick="prev6()" type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" onclick="next6()" type="button"><strong>NEXT</strong></button>
-        </div>
-    <div class="pages" id="seven" style="display: none;">
-            <div>
-                <p>Attach statement of claim <strong>*</strong></p>
-                <input name="statementOfClaim" type="file">
-                <p>Attach statements of oaths of witness(es) <strong>*</strong></p>
-                <input name="oathOfWitness" type="file">
-            </div>
-            <button name="prev" class="previous" onclick="prev7()" type="button"><strong>PREVIOUS</strong></button>
-            <button name="next" class="next position" onclick="next7()" type="button"><strong>NEXT</strong></button>
-        </div>
-    <div class="pages" id="eight" style="display: none;">
-            <div>
-                <p>Attach other relevant documents to the claim <strong>*</strong></p>
-                <input name="relevantDocument" type="file">
-            </div>
-            <button name="prev" class="previous" onclick="prev8()" type="button"><strong>PREVIOUS</strong></button>
-            <button name="submit" class="position next-page" onsubmit="final()" type="submit"><strong>SUBMIT</strong></button>
-        </div>
+<%--    <div class="pages" id="six" style="display: none;">--%>
+<%--            <p>What steps have you taken to try settle out of court with the defendant?  <strong>*</strong></p><br>--%>
+<%--            <div class="rad">--%>
+<%--                <input class= "check" type="checkbox" name="checkbox"--%>
+<%--                       value="Tried to settle amicably with other party" >--%>
+<%--                <p>Tried to settle amicably with other party</p>--%>
+<%--                <input class="check" type="checkbox" name="checkbox"--%>
+<%--                       value="Alternative Dispute Resolution (ADR)">--%>
+<%--                <p>Alternative Dispute Resolution (ADR)</p>--%>
+<%--            </div>--%>
+<%--            <button name="prev" class="previous" onclick="prev6()" type="button"><strong>PREVIOUS</strong></button>--%>
+<%--            <button name="next" class="next position" onclick="next6()" type="button"><strong>NEXT</strong></button>--%>
+<%--        </div>--%>
+<%--    <div class="pages" id="seven" style="display: none;">--%>
+<%--            <div>--%>
+<%--                <p>Attach statement of claim <strong>*</strong></p>--%>
+<%--                <input name="statementOfClaim" type="file">--%>
+<%--                <p>Attach statements of oaths of witness(es) <strong>*</strong></p>--%>
+<%--                <input name="oathOfWitness" type="file">--%>
+<%--            </div>--%>
+<%--            <button name="prev" class="previous" onclick="prev7()" type="button"><strong>PREVIOUS</strong></button>--%>
+<%--            <button name="next" class="next position" onclick="next7()" type="button"><strong>NEXT</strong></button>--%>
+<%--        </div>--%>
+<%--    <div class="pages" id="eight" style="display: none;">--%>
+<%--            <div>--%>
+<%--                <p>Attach other relevant documents to the claim </p>--%>
+<%--                <input name="relevantDocument" type="file">--%>
+<%--            </div>--%>
+<%--            <button name="prev" class="previous" onclick="prev8()" type="button"><strong>PREVIOUS</strong></button>--%>
+<%--            <button name="submit" class="position" type="submit"><strong>SUBMIT</strong></button>--%>
+<%--        </div>--%>
 </form>
 <script src="/javascript/progressbar.js" type="text/javascript"></script>
 </body>

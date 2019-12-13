@@ -16,8 +16,6 @@
 <div id="img">
     <img src="/images/check.png">
 </div><br><br>
-<h1>The Claim has been filled successfully!</h1>
-<p>The Submission Id is: ${inserttheIdhere} </p>
-
+<h1>The Claim has been filed successfully!</h1>
 </body>
 </html>
