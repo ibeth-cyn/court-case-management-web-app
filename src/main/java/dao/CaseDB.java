@@ -3,6 +3,7 @@ package dao;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import model.Case;
 import org.bson.Document;
@@ -59,7 +60,7 @@ public class CaseDB {
     public List<Case> getRegistrarCases() {
 
         FindIterable<Document> findIterable = courtCases.find(eq("status", "Pending")).
-                projection(include("claimantName","defendantName", "briefDescription"));
+                projection(fields(include("claimantName","defendantName", "briefDescription"), excludeId()));
 
         String claimantName = null;
         String defendantName = null;

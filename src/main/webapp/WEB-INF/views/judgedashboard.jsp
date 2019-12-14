@@ -20,7 +20,9 @@
 <h1>View Cases on your Calendar</h1>
 <br><br>
 <c:forEach items="${listCases}" var="cases" varStatus="loop">
-    <p>${cases.claimantName} <span>vs</span> ${cases.defendantName}</p>
+    <div>
+        <p>${cases.claimantName} <span>vs</span> ${cases.defendantName}</p>
+    </div>
 </c:forEach>
 </body>
 </html>
