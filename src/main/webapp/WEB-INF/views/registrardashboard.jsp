@@ -5,6 +5,7 @@
   Time: 11:57 AM
   To change this template use File | Settings | File Templates.
 --%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,28 +14,33 @@
     <style><%@include file="/WEB-INF/views/styles/dashboard.css"%></style>
 </head>
 <body>
+<form action="logout.co" method="post" >
+    <button name="logout" type="submit"><strong>Logout</strong></button>
+</form>
 <h1>View List of Filed Claims</h1>
 <br><br>
 <main>
-    <table id="hello">
+    <table>
         <thead>
         <tr>
             <th>Claimant</th>
+            <th>Defendant</th>
             <th>Brief Description</th>
-            <th>Status</th>
             <th>Approve Case</th>
         </tr>
         </thead>
+        <c:forEach items="${listCases}" var="cases" varStatus="loop">
         <tbody>
-        <tr>
-            <td>Hello</td>
-            <td>Hello</td>
-            <td>Hello</td>
-            <td><button name="approve" onclick="approve()" type="button"><strong>APPROVE</strong></button></td>
-        </tr>
+            <tr>
+                <td>${cases.claimantName}</td>
+                <td>${cases.defendantName}</td>
+                <td>${cases.briefDescription}</td>
+                <td><a href="/approve.co?claimantName=${cases.claimantName}&defendantName=${cases.defendantName}
+                &briefDescription=${cases.briefDescription}"><strong>APPROVE</strong></a></td>
+            </tr>
         </tbody>
+        </c:forEach>
     </table>
 </main>
-<script src="/javascript/approve.js" type="text/javascript"></script>
 </body>
 </html>

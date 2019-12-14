@@ -22,8 +22,6 @@
     Password:<br>
     <input type="password" name="password" placeholder="Enter your password" title="Password must be at least 8 or more characters including 1 uppercase letter, 1 lowercase letter and numeric characters"
            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
-
-    <!--TODO: if there is time, implement reset password functionality-->
     <button type="submit"><strong>LOGIN TO DASHBOARD</strong></button>
 </form>
 </div>

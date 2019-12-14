@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class Case {
 
-    //TODO: Create a constructor that displays what appears on the judge's dashboard
 
     //Claimant details
     private String claimantName; //Can be the name of the law firm as well
@@ -36,7 +35,6 @@ public class Case {
     //Claim documents reference
     private String statementOfClaim;
     private String briefDescription;
-    private String checkbox;
     private String oathOfWitness;
     private String relevantDocument;
     private String status;
@@ -73,20 +71,24 @@ public class Case {
         this.briefDescription = briefDescription;
     }
 
-    public Case(String claimantName, String briefDescription, String status) {
+    public Case(String claimantName, String defendantName, String briefDescription) {
         this.claimantName = claimantName;
+        this.defendantName = defendantName;
         this.briefDescription = briefDescription;
-        this.status = status;
     }
 
-    public String getStatus() {
+    public Case(String claimantName, String defendantName){
+        this.claimantName = claimantName;
+        this.defendantName = defendantName;
+    }
+
+    public String getStatus(){
         return status;
     }
 
-    public void setStatus() {
-        this.status = "Pending";
+    public  void setStatus(String status){
+        this.status = status;
     }
-
     public String getClaimantName() {
         return claimantName;
     }
@@ -240,14 +242,6 @@ public class Case {
         this.briefDescription = briefDescription;
     }
 
-    public String getCheckbox() {
-        return checkbox;
-    }
-
-    public void setCheckbox(String checkbox) {
-        this.checkbox = checkbox;
-    }
-
     public String getOathOfWitness() {
         return oathOfWitness;
     }
@@ -288,7 +282,6 @@ public class Case {
                 Objects.equals(defendantEmail, aCase.defendantEmail) &&
                 Objects.equals(statementOfClaim, aCase.statementOfClaim) &&
                 Objects.equals(briefDescription, aCase.briefDescription) &&
-                Objects.equals(checkbox, aCase.checkbox) &&
                 Objects.equals(oathOfWitness, aCase.oathOfWitness) &&
                 Objects.equals(relevantDocument, aCase.relevantDocument) &&
                 Objects.equals(status, aCase.status);
@@ -296,7 +289,10 @@ public class Case {
 
     @Override
     public int hashCode() {
-        return Objects.hash(claimantName, claimantSurname, claimantTradingName, claimantOrganisationType, claimantAddress, claimantEmailAddress, clientName, clientSurname, clientTradingName, clientOrganisationType, defendantName, defendantSurname, defendantTradingName, defendantOrganisationType, defendantAddress, defendantLGA, defendantEmail, statementOfClaim, briefDescription, checkbox, oathOfWitness, relevantDocument, status);
+        return Objects.hash(claimantName, claimantSurname, claimantTradingName, claimantOrganisationType, claimantAddress,
+                claimantEmailAddress, clientName, clientSurname, clientTradingName, clientOrganisationType, defendantName,
+                defendantSurname, defendantTradingName, defendantOrganisationType, defendantAddress, defendantLGA, defendantEmail,
+                statementOfClaim, briefDescription, oathOfWitness, relevantDocument, status);
     }
 }
 

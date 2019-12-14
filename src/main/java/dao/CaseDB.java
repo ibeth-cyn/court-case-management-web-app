@@ -6,6 +6,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import model.Case;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 
 
 import java.util.ArrayList;
@@ -56,33 +57,59 @@ public class CaseDB {
 
 
     public List<Case> getRegistrarCases() {
+
         FindIterable<Document> findIterable = courtCases.find(eq("status", "Pending")).
-                projection(include("claimantName", "briefDescription"));
+                projection(include("claimantName","defendantName", "briefDescription"));
 
         String claimantName = null;
+        String defendantName = null;
         String briefDescription = null;
-        String status = null;
 
         List<Case> caseList = new ArrayList<>();
 
         for (Document c: findIterable){
             claimantName = c.getString("claimantName");
+            defendantName = c.getString("defendantName");
             briefDescription = c.getString("briefDescription");
-            status = c.getString("status");
 
-            caseList.add(new Case(claimantName,briefDescription,status));
+            caseList.add(new Case(claimantName,defendantName,briefDescription));
 
             return caseList;
         }
         return null;
     }
 
+    public void approveCase(Case cases){
+        Document search = (Document) courtCases.find(new Document("claimantName", cases.getClaimantName())).first();
 
-    //TODO: Create method that approves case for designation and update the status of the case to Approved
+        if(search != null){
+            System.out.println("Found user!");
+            Bson updateStatus = new Document("status", "Approved");
+            Bson updateOperation = new Document("$set", updateStatus);
 
-    public FindIterable<Document> getJudgesCases() {
+            courtCases.updateOne(search, updateOperation);
+
+            System.out.println("Status updated");
+        }
+    }
+
+    public List<Case> getJudgesCases() {
         FindIterable<Document> findIterable = courtCases.find(eq("status", "Approved")).
-                projection(fields(include("claimantName", "defendantName"), excludeId()));
-        return findIterable;
+                projection(include("claimantName", "defendantName"));
+
+        String claimantName = null;
+        String defendantName = null;
+
+        List<Case> caseList = new ArrayList<>();
+
+        for (Document c: findIterable){
+            claimantName = c.getString("claimantName");
+            defendantName = c.getString("defendantName");
+
+            caseList.add(new Case(claimantName,defendantName));
+
+            return caseList;
+        }
+        return null;
     }
 }
