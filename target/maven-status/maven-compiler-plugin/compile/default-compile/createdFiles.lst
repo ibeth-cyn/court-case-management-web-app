@@ -1,4 +1,5 @@
 controller\PasswordHash.class
+controller\servlets\Filter.class
 controller\servlets\FiledServlet.class
 controller\servlets\RegistrarServlet.class
 dao\UserDB.class

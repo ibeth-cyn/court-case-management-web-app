@@ -18,8 +18,8 @@ public class JudgeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
             throws ServletException, IOException {
 
-            httpServletRequest.setAttribute("listCases", listCases.getJudgesCases());
-            httpServletRequest.getRequestDispatcher("/WEB-INF/views/registrardashboard.jsp").
+            httpServletRequest.setAttribute("listApprovedCases", listCases.getJudgesCases());
+            httpServletRequest.getRequestDispatcher("/WEB-INF/views/judgedashboard.jsp").
                     forward(httpServletRequest,httpServletResponse);
         }
 }

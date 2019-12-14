@@ -16,7 +16,6 @@ import java.security.spec.InvalidKeySpecException;
 @WebServlet(urlPatterns = "/login.co")
 public class LoginServlet extends HttpServlet {
 
-    //TODO: Implement WebFilters
     //Create an instance of the user authentication class
     PasswordHash passwordHash = new PasswordHash();
 
@@ -54,10 +53,12 @@ public class LoginServlet extends HttpServlet {
             httpServletRequest.getSession().setAttribute("email",email);
             httpServletResponse.sendRedirect("/registrarDashboard.co");
         }
+
         else if(login == true && (authenticate.userRole(newPerson).equals("Judge"))){
             httpServletRequest.getSession().setAttribute("email", email);
             httpServletResponse.sendRedirect("/judgeDashboard.co");
         }
+
         else{
             httpServletRequest.setAttribute("invalidLoginError",
                     "The password you entered or email address is incorrect. Please enter a valid password.");
